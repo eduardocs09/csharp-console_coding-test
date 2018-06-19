@@ -28,7 +28,7 @@ namespace csharp_console
 
         private static string GetFileNAme(string[] args)
         {
-            string defaultFilePath = "D:\\Learning\\Code\\CSharp\\csharp-console\\entry.txt";
+            string defaultFilePath = "D:\\Coding Tests\\csharp-console\\entry.txt";
             string fileName = string.Empty;
             if (args.Length > 0)
             {
@@ -136,12 +136,26 @@ namespace csharp_console
             #endregion
 
             #region THALMIC LABS SOFTWARE ENGINEER BACKEND
-            var subsString = lines[0];
-            var movies = ThalmicLabsSoftwareEngineerBackend.getMovieTitles(subsString);
-            foreach (var movie in movies)
+            //var subsString = lines[0];
+            //var movies = ThalmicLabsSoftwareEngineerBackend.getMovieTitles(subsString);
+            //foreach (var movie in movies)
+            //{
+            //    Console.WriteLine(movie);
+            //}
+            #endregion
+
+            #region CI&T YOU GLOBAL
+            //CIAndTYouGlobal.maximumCupcakes(lines);
+            
+            //Console.WriteLine(CIAndTYouGlobal.slotGame(lines));
+
+            var avgs = lines[1].Split(' ');
+            List<int> avgsInt = new List<int>();
+            foreach (string avg in avgs)
             {
-                Console.WriteLine(movie);
+                avgsInt.Add(Convert.ToInt32(avg));
             }
+            Console.WriteLine(CIAndTYouGlobal.minMoves(avgsInt.ToArray()));
             #endregion
 
             var test = lines;

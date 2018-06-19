@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BalancedExpressions.cs" />
+    <Compile Include="CIAndTYouGlobal.cs" />
     <Compile Include="Combinatorial.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="Program.cs" />
